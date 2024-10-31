@@ -1,0 +1,24 @@
+<div *ngIf="showHeader()" [ngStyle]="GetHeaderStyle()" >
+
+  <h1>{{ name }} </h1>
+  <p>{{ getName() }}</p>
+
+</div>
+
+
+<button (click)="buttonClick()">Button</button>
+<p *ngFor="let x of niz">
+{{x}}
+</p>
+
+<hr>
+<input [(ngModel)]="name">
+
+<hr>
+
+<button (click)="fetchData()">button fetch </button>
+<div *ngFor="let x of studentArray">
+  {{x.id}}
+  {{x.ime}}
+  {{x.prezime}}
+  </div>
